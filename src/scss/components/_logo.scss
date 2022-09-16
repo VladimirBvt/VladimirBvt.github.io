@@ -1,0 +1,16 @@
+.logo {
+	max-width: 260px;
+	margin: 50px auto 35px auto;
+
+	.logo__image {
+		margin-bottom: 20px;
+	}
+
+	.logo__title {
+		font-size: 64px;
+		background: linear-gradient(90.14deg, #576265 0.25%, rgba(158, 161, 161, 0.682986) 35.97%, #5C6362 62.35%, rgba(157, 160, 162, 0.44) 84.1%, rgba(100, 112, 115, 0.97) 91.15%, rgba(117, 122, 123, 0) 112.93%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+	}
+}

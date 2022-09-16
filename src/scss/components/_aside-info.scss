@@ -1,0 +1,24 @@
+@use "../settings/vars";
+
+.aside-info {
+	width: 23%;
+
+	@media (max-width: vars.$breakpoint_s) {
+		width: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+}
+
+.calendar-image {
+
+	@media (max-width: vars.$breakpoint_s) {
+	}
+}
+
+.phone-wrapper {
+
+	@media (max-width: vars.$breakpoint_s) {
+		margin-bottom: 50px;
+	}
+}

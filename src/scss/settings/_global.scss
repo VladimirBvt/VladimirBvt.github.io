@@ -1,0 +1,44 @@
+@use "vars";
+
+body {
+	font-family: vars.$font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	background: #F5F5F5;
+	// color: #fff;
+	// background: #00a7e0;
+	// padding-top: $height_header_xs;
+
+	#root {
+		height: 100vh;
+	}
+
+	.login,
+	.register {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+
+		&__title {
+			font-size: 30px;
+			font-weight: 700;
+		}
+
+		.form {
+			margin-top: 20px;
+		}
+
+		a {
+			margin-top: 20px;
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@use "../settings/vars";
+
+.section-menu {
+	width: 18%;
+
+	@media (max-width: vars.$breakpoint_s) {
+			display: none;
+		}
+}
+
+.menu {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+	color: rgba(105, 98, 98, 0.8);
+	margin: 130px 0 80px 0;
+
+	@media (max-width: vars.$breakpoint_m) {
+		font-size: 20px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 0 20px 20% 7%;
+		cursor: pointer;
+		position: relative;
+
+		&:hover {
+			color: #000;
+		}
+
+		&:hover .menu__icon-bg {
+			background: url("../../assets/menu-icons/menu-icon-hover-2.svg");
+		}
+
+		&-1:hover .menu__icon-bg-1 {
+			background: url("../../assets/menu-icons/menu-icon-hover-5.svg");
+		}
+
+		&:last-child {
+				margin-bottom: 0;
+			}
+	}
+
+		&__icon {
+			margin-right: 5%;
+		}
+
+		&__icon-bg {
+			width: 40px;
+			height: 40px;
+			background: url("../../assets/menu-icons/menu-icon-2.svg");
+		}
+
+		&__icon-bg-1 {
+			position: absolute;
+			left: -45px;
+			width: 40px;
+			height: 40px;
+			background: url("../../assets/menu-icons/menu-icon-5.svg");
+		}
+
+		&__item-1 {
+
+		}
+
+		// &__icon-bg:hover {
+		// 	background: url("../../assets/menu-icons/menu-icon-hover-2.svg");
+		// }
+
+		// &__icon-hover {
+		// 	background: url("../../assets/menu-item-general-hover.svg");
+		// }
+}
+
+.button-voice-assistant-wrapper {
+	width: 131px;
+	margin: 0 auto 140px auto;
+}

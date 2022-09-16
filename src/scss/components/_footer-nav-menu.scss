@@ -1,0 +1,18 @@
+@use "../settings/vars";
+
+.footer-nav-menu {
+	display: none;
+
+	@media (max-width: vars.$breakpoint_s) {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 43px;
+		padding: 0 40px;
+		border-top: 0.5px solid rgba(96, 87, 87, 0.5);
+		background: #fff;
+	}
+}

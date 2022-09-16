@@ -1,0 +1,9 @@
+@use "../settings/vars";
+
+.button-voice-assistant {
+  display: none;
+
+  @media (max-width: vars.$breakpoint_s) {
+    display: block;
+  }
+}

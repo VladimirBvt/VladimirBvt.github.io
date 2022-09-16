@@ -1,0 +1,11 @@
+@use "../settings/vars";
+
+.main {
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: vars.$breakpoint_s) {
+		display: block;
+		padding: 15px 17px;
+	}
+}

@@ -1,0 +1,38 @@
+@use "../settings/vars";
+
+.phone {
+  width: 140px;
+  height: 163px;
+  font-weight: 300;
+  background: radial-gradient(111.65% 110.54% at 9.77% 13.27%, rgba(219, 198, 198, 0.8) 0%, rgba(219, 198, 198, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+
+  @media (max-width: vars.$breakpoint_s) {
+
+  }
+
+  &__title, &__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(96, 87, 87, 0.5);
+  }
+
+  &__title {
+    color: #736363;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  &__items {
+    color: #2D2525;
+  }
+
+  &__item {
+    height: 35px;
+    padding: 0 20px 0 6px;
+    justify-content: space-between;
+  }
+}

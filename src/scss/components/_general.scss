@@ -1,0 +1,101 @@
+@use "../settings/vars";
+
+.general {
+	width: 100%;
+	display: grid;
+	grid-template-areas: "A B C" "D D E" "F G H" "I J K";
+	gap: 40px;
+	padding: 10px;
+
+	@media (max-width: vars.$breakpoint_s) {
+			gap: 14px;
+			grid-template-rows: repeat(2, 110px);
+			grid-template-columns: repeat(3, 1fr);
+			padding: 0;
+		}
+
+	&__items {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(50px);
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #605D5D;
+		font-size: 20px;
+		letter-spacing: 0.05em;
+
+		@media (max-width: vars.$breakpoint_s) {
+				font-size: 13px;
+			}
+
+		&-image {
+
+			@media (max-width: vars.$breakpoint_s) {
+					width: 60px;
+				}
+		}
+
+		&-1 {
+			grid-area: A;
+			background: #F0DFC4;
+		}
+
+		&-2 {
+			grid-area: B;
+			background: #C1F0C5;
+		}
+
+		&-3 {
+			grid-area: C;
+			background: #F4AA9A;
+		}
+
+		&-4 {
+			grid-area: D;
+			background: #ADBFEC;
+		}
+
+		&-5 {
+			grid-area: E;
+			background: #EAD4F4;
+		}
+
+		&-6, &-7, &-8, &-9, &-10, &-11 {
+			@media (max-width: vars.$breakpoint_s) {
+					display: none;
+				}
+		}
+
+		&-6 {
+			grid-area: F;
+			background: #C8B9FE;
+		}
+
+		&-7 {
+			grid-area: G;
+			background: #F9CEA2;
+		}
+
+		&-8 {
+			grid-area: H;
+			background: #BDC3FD;
+		}
+
+		&-9 {
+			grid-area: I;
+			background: #CDF1FB;
+		}
+
+		&-10 {
+			grid-area: J;
+			background: #E6F393;
+		}
+
+		&-11 {
+			grid-area: K;
+			background: #C8F7CA;
+		}
+	}
+}
